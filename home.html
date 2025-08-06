@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!-- Navbar -->
+<nav class="navbar">
+    <h1 class="logo">ADENTURE</h1>
+    <ul class="nav-links">
+        <li class="active"><a href="#/">Home</a></li>
+        <li><a href="tour.html">Tours</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="ctn"><a href="contact.html">Contact</a></li>
+    </ul>
+<img src="Image/deosi.webp" alt="" class="menu-btn">
+
+</nav>
+    <header class="header">
+        <div class="header-content">
+            <h2>Explore The ColorFul World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT </h1>
+            <a href="#" class="ctn">Learn More</a>
+
+
+        </div>
+    </header>
+    <!-- Events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcomming Events !</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="colum">
+                <img src="Image/Rama.jpg" alt="">
+                <h4>Event Camp Track</h4>
+                <p>It is so Jorgious and gloming Environment for viewer. <br>It is honestly so prety place where everyone can and <br>Enjoy with their peers relative,family</p>
+                <a href="#" class="ctn">Learn More..</a>
+            </div>
+            <div class="colum">
+                <img src="Image/Walking_Holidays.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>It is so Jorgious and gloming Environment for viewer. <br>It is honestly so prety place where everyone can and <br>Enjoy with their peers relative,family</p>
+                <a href="#" class="ctn">Learn More..</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>Explore The World!</h1>
+            <p>Nature is the silent teacher that speaks in colors, rhythms, and balance. Its beauty is not loud, yet it captures hearts without trying. The soft rustle of leaves, the golden light of dawn, the calm flow of rivers — all remind us that true peace is found in simplicity. Mountains stand tall with strength, trees offer shade without pride, and flowers bloom quietly, teaching us grace without words.
+
+In every part of nature, there is harmony — a delicate balance between giving and receiving, between survival and beauty. It doesn’t ask for attention; it simply is, reminding us that being present is powerful. Nature heals without medicine and inspires without noise. Its beauty invites us to slow down, breathe deeply, and reconnect with the essence of life..</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+        </section>
+        <section class="tours">
+            <div class="row">
+                <div class="content-colum">
+                    <h1>UPCOMMING TOURS & DESTINATION</h1>
+                    <P>Tourism is the activity of traveling to different places for leisure, <br>
+                        adventure, or cultural exploration. It helps people relax, learn about <br>
+                        new cultures, and experience the beauty and diversity of the world. <br>
+                        Tourism also plays a vital role in boosting the economy by creating jobs <br>
+                        and supporting local businesses. Whether visiting historical <br>
+                        landmarks, natural wonders, or modern cities, tourism connects people and promotes <br>
+                        global understanding.</P>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="image-colum">
+                    <div class="image-gallery">
+                        <img src="Image/6.jpg" alt="">
+                        <img src="Image/5.jpg" alt="">
+                        <img src="Image/4.jpg" alt="">
+                        <img src="Image/3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>New Market MAin Chorangi of Ibex Astore</p>
+            <p>Copyright @ 2020 outdoor adventure</p>
+        </section>
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

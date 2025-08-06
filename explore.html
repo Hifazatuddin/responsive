@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+    <title>Explore | Adventure</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #111827;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 2rem;
+            color: white;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links .active a {
+            color: #00bcd4;
+        }
+
+        header {
+            background: linear-gradient(to right, #76c84d, #0072ff);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .explore-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            color: #0072ff;
+            font-size: 1.3rem;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .explore-button {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #0072ff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #33d148;
+        }
+
+        .footer {
+            background-color: #111827;
+            color: #ccc;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tour.html">Tours</a></li>
+            <li class="active"><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Explore</h1>
+        <p>Discover content, categories, and new experiences</p>
+    </header>
+
+    <div class="explore-container">
+        <div class="grid">
+            <div class="card">
+                <img src="Image/11.jpg" alt="Nature">
+                <div class="card-content">
+                    <h3>Nature</h3>
+                    <p>Explore the beauty of nature and discover serene landscapes and wildlife.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/technology.jpeg" alt="Technology">
+                <div class="card-content">
+                    <h3>Technology</h3>
+                    <p>Stay updated with the latest trends and innovations in the tech world.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/educ.jpeg" alt="Education">
+                <div class="card-content">
+                    <h3>Education</h3>
+                    <p>Find educational resources and learning opportunities from around the world.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/trav.jpeg" alt="Travel">
+                <div class="card-content">
+                    <h3>Travel</h3>
+                    <p>Embark on journeys to new destinations and discover travel tips.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/hlf.jpeg" alt="Health">
+                <div class="card-content">
+                    <h3>Health & Wellness</h3>
+                    <p>Learn how to maintain a balanced and healthy lifestyle.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/inn.jpeg" alt="Innovation">
+                <div class="card-content">
+                    <h3>Innovation</h3>
+                    <p>Delve into groundbreaking ideas and creative discoveries shaping the future.</p>
+                    <a href="#" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>New Market, Main Chorangi of Ibex, Astore</p>
+        <p>&copy; 2025 Outdoor Adventure. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
